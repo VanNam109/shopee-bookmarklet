@@ -169,15 +169,18 @@
       #${OVERLAY_ID} .footer {
         display: flex;
         justify-content: space-between;
-        gap: 12px;
-        align-items: center;
-        padding: 16px 22px 22px;
+        gap: 16px;
+        align-items: flex-end;
+        padding: 18px 28px 24px 22px;
         background: #fff;
         border-top: 1px solid rgba(226, 232, 240, 0.9);
+        box-shadow: 0 -8px 24px rgba(15, 23, 42, 0.04);
       }
       #${OVERLAY_ID} .meta {
         font-size: 12px;
         color: #64748b;
+        line-height: 1.5;
+        margin-right: auto;
       }
       #${OVERLAY_ID} .close {
         border: 0;
@@ -185,8 +188,11 @@
         background: #ea580c;
         color: #fff;
         font-weight: 700;
-        padding: 11px 14px;
+        padding: 11px 16px;
         cursor: pointer;
+        flex-shrink: 0;
+        margin-right: 2px;
+        margin-bottom: 2px;
       }
       @media (max-width: 520px) {
         #${OVERLAY_ID} .grid { grid-template-columns: 1fr; }
@@ -203,7 +209,14 @@
           font-size: 30px;
         }
         #${OVERLAY_ID} .footer {
-          padding: 14px 18px 18px;
+          align-items: stretch;
+          flex-direction: column;
+          padding: 14px 18px 20px;
+        }
+        #${OVERLAY_ID} .close {
+          width: 100%;
+          margin-right: 0;
+          margin-bottom: 0;
         }
       }
     `;
@@ -380,6 +393,14 @@
               <span class="label">Tiết kiệm ước tính</span>
               <span id="value-saved" class="value">-</span>
             </div>
+            <div class="card">
+              <span class="label">Cú chốt đau ví nhất</span>
+              <span id="value-max-order" class="value">-</span>
+            </div>
+            <div class="card">
+              <span class="label">Đơn mua cho vui nhưng vẫn tính</span>
+              <span id="value-min-order" class="value">-</span>
+            </div>
           </div>
         </div>
         <div class="footer">
@@ -452,6 +473,8 @@
     let totalSpent = 0;
     let totalOriginal = 0;
     let totalItems = 0;
+    let maxOrderValue = 0;
+    let minOrderValue = Number.POSITIVE_INFINITY;
     let keepFetching = true;
 
     while (keepFetching) {
@@ -463,6 +486,12 @@
         totalSpent += stats.finalTotal;
         totalOriginal += stats.originalTotal;
         totalItems += stats.itemCount;
+        if (stats.finalTotal > maxOrderValue) {
+          maxOrderValue = stats.finalTotal;
+        }
+        if (stats.finalTotal > 0 && stats.finalTotal < minOrderValue) {
+          minOrderValue = stats.finalTotal;
+        }
       }
 
       keepFetching = orders.length >= PAGE_SIZE;
@@ -474,6 +503,8 @@
       totalSpent,
       totalItems,
       totalSaved: Math.max(0, totalOriginal - totalSpent),
+      maxOrderValue,
+      minOrderValue: Number.isFinite(minOrderValue) ? minOrderValue : 0,
     };
   }
 
@@ -525,6 +556,16 @@
         `${formatNumber(stats.totalItems)} sản phẩm`,
       );
       setText(overlay, "#value-saved", `${formatNumber(stats.totalSaved)} VNĐ`);
+      setText(
+        overlay,
+        "#value-max-order",
+        `${formatNumber(stats.maxOrderValue)} VNĐ`,
+      );
+      setText(
+        overlay,
+        "#value-min-order",
+        `${formatNumber(stats.minOrderValue)} VNĐ`,
+      );
       setText(
         overlay,
         "#shopee-stats-meta",
