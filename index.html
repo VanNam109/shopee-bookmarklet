@@ -9,18 +9,23 @@
   <body>
     <main class="page">
       <section class="hero">
-        <span class="eyebrow">Bản online không cần extension</span>
         <h1>Shopee Stats Bookmarklet</h1>
         <p class="subtitle">
-          Người dùng chỉ cần kéo nút cài đặt vào thanh dấu trang, sau đó mở Shopee và bấm nút đó để tra cứu.
+          Người dùng chỉ cần kéo nút cài đặt vào thanh dấu trang, sau đó mở
+          Shopee và bấm nút đó để tra cứu.
         </p>
         <p class="subtitle">Tác giả: Nam</p>
         <div class="actions">
-          <a id="installBookmarklet" class="bookmarklet-button" href="#">Kéo nút này lên thanh dấu trang</a>
-          <button id="copyBookmarklet" class="secondary-button">Sao chép bookmarklet</button>
+          <a id="installBookmarklet" class="bookmarklet-button" href="#"
+            >Shopee Stats Bookmarklet</a
+          >
+          <button id="copyBookmarklet" class="secondary-button">
+            Sao chép bookmarklet
+          </button>
         </div>
         <p id="copyStatus" class="copy-status">
-          Nếu không kéo thả được, bấm sao chép rồi tự tạo bookmark mới và dán vào ô URL.
+          Nếu không kéo thả được, bấm sao chép rồi tự tạo bookmark mới và dán
+          vào ô URL.
         </p>
       </section>
 
@@ -28,46 +33,59 @@
         <h2>Cách dùng nhanh</h2>
         <ol>
           <li>Mở trang này trên Chrome.</li>
-          <li>Nếu chưa thấy thanh dấu trang, bấm <code>Ctrl + Shift + B</code> để hiện ra.</li>
-          <li>Kéo nút <code>Kéo nút này lên thanh dấu trang</code> lên thanh bookmarks.</li>
-          <li>Mở <code>https://shopee.vn</code> và đăng nhập.</li>
+          <li>
+            Nếu chưa thấy thanh dấu trang, bấm <code>Ctrl + Shift + B</code> để
+            hiện ra.
+          </li>
+          <li>
+            Kéo nút <code>Kéo nút này lên thanh dấu trang</code> lên thanh
+            bookmarks.
+          </li>
+          <li>
+            Mở
+            <a href="https://shopee.vn" target="_blank">https://shopee.vn</a> và
+            đăng nhập.
+          </li>
           <li>Bấm bookmark đã lưu để xem thống kê.</li>
         </ol>
       </section>
 
       <section class="card">
-        <h2>GIF hướng dẫn cài đặt</h2>
-        <p>
-          Bạn có thể đặt file GIF hướng dẫn tại <code>images/huong-dan-cai-dat.gif</code>. Khi đã có file, chỉ cần sửa
-          đường dẫn trong khung bên dưới hoặc thay trực tiếp vào chỗ này.
-        </p>
+        <h2>Video hướng dẫn cài đặt</h2>
         <div class="gif-frame">
-          <img
-            class="guide-gif"
-            src="./images/huong-dan-cai-dat.gif"
-            alt="GIF hướng dẫn cài đặt và sử dụng Shopee Stats"
-          />
+          <video
+            class="guide-video"
+            controls
+            muted
+            playsinline
+            preload="metadata"
+          >
+            <source src="./assets/huong-dan-cai-dat.mp4" type="video/mp4" />
+            Trình duyệt của bạn không hỗ trợ video HTML5.
+          </video>
         </div>
       </section>
 
       <section class="card">
         <h2>Nếu người dùng không rành</h2>
         <ul>
-          <li>Nếu chưa thấy thanh bookmarks, hãy bấm <code>Ctrl + Shift + B</code>.</li>
-          <li>Đổi tên bookmark thành <code>Shopee Stats</code> để họ dễ bấm.</li>
-          <li>Nếu không kéo thả được, dùng nút sao chép rồi tạo bookmark thủ công giúp họ một lần.</li>
+          <li>
+            Nếu chưa thấy thanh bookmarks, hãy bấm
+            <code>Ctrl + Shift + B</code>.
+          </li>
         </ul>
       </section>
 
       <section class="card">
         <h2>Ghi chú kỹ thuật</h2>
         <p>
-          Bookmarklet sẽ chỉ hoạt động trên <code>shopee.vn</code>, dùng phiên đăng nhập hiện tại của người dùng, và hiển
-          thị kết quả ngay trên trang.
+          Bookmarklet sẽ chỉ hoạt động trên <code>shopee.vn</code>, dùng phiên
+          đăng nhập hiện tại của người dùng, và hiển thị kết quả ngay trên
+          trang.
         </p>
       </section>
     </main>
 
     <script src="app.js"></script>
   </body>
-  </html>
+</html>

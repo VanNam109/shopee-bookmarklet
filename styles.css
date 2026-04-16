@@ -52,6 +52,11 @@ h2 {
   font-size: 22px;
 }
 
+h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
 .subtitle,
 p,
 li {
@@ -108,12 +113,47 @@ li {
   background: linear-gradient(180deg, #fff7ed, #fff);
 }
 
-.guide-gif {
+.guide-video {
   display: block;
   width: 100%;
   height: auto;
   min-height: 240px;
   background: #fff7ed;
+}
+
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.level-card {
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid rgba(251, 146, 60, 0.16);
+  background: linear-gradient(180deg, #fff 0%, #fff7ed 100%);
+}
+
+.level-art {
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  margin-bottom: 12px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fb923c, #f97316);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  box-shadow: 0 10px 20px rgba(249, 115, 22, 0.18);
+}
+
+.level-tag {
+  margin: 0 0 6px;
+  color: #c2410c;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 code {
