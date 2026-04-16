@@ -1,0 +1,129 @@
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+  font-family: Inter, Arial, sans-serif;
+  color: #0f172a;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top right, rgba(251, 146, 60, 0.18), transparent 24%),
+    linear-gradient(180deg, #fff7ed 0%, #fff 38%, #fff 100%);
+}
+
+.hero,
+.card {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(251, 146, 60, 0.15);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.06);
+}
+
+.hero {
+  margin-bottom: 18px;
+}
+
+.card + .card {
+  margin-top: 18px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(249, 115, 22, 0.12);
+  color: #c2410c;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 34px;
+  line-height: 1.15;
+}
+
+h2 {
+  margin: 0 0 12px;
+  font-size: 22px;
+}
+
+.subtitle,
+p,
+li {
+  line-height: 1.7;
+}
+
+.subtitle {
+  margin: 0 0 18px;
+  color: #475569;
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.bookmarklet-button,
+.secondary-button {
+  border: 0;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bookmarklet-button {
+  background: linear-gradient(135deg, #ea580c, #f97316);
+  color: #fff;
+  box-shadow: 0 12px 24px rgba(234, 88, 12, 0.22);
+}
+
+.secondary-button {
+  background: #fff7ed;
+  color: #9a3412;
+  border: 1px solid #fdba74;
+}
+
+.copy-status {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.gif-frame {
+  margin-top: 14px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(251, 146, 60, 0.2);
+  background: linear-gradient(180deg, #fff7ed, #fff);
+}
+
+.guide-gif {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 240px;
+  background: #fff7ed;
+}
+
+code {
+  background: #ffedd5;
+  border-radius: 6px;
+  padding: 2px 6px;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding-left: 22px;
+}
