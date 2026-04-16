@@ -42,6 +42,9 @@
       #${OVERLAY_ID} * { box-sizing: border-box; font-family: Inter, Arial, sans-serif; }
       #${OVERLAY_ID} .panel {
         width: min(520px, 100%);
+        max-height: min(92vh, 900px);
+        display: flex;
+        flex-direction: column;
         border-radius: 24px;
         overflow: hidden;
         background: linear-gradient(180deg, #fff7ed 0%, #ffffff 36%);
@@ -128,7 +131,10 @@
         background: rgba(255, 247, 237, 0.2);
       }
       #${OVERLAY_ID} .body {
+        flex: 1;
         padding: 18px 22px 22px;
+        overflow-y: auto;
+        overscroll-behavior: contain;
       }
       #${OVERLAY_ID} .status {
         margin: 0 0 14px;
@@ -164,8 +170,10 @@
         display: flex;
         justify-content: space-between;
         gap: 12px;
-        margin-top: 16px;
         align-items: center;
+        padding: 16px 22px 22px;
+        background: #fff;
+        border-top: 1px solid rgba(226, 232, 240, 0.9);
       }
       #${OVERLAY_ID} .meta {
         font-size: 12px;
@@ -182,6 +190,21 @@
       }
       @media (max-width: 520px) {
         #${OVERLAY_ID} .grid { grid-template-columns: 1fr; }
+        #${OVERLAY_ID} {
+          padding: 12px;
+          align-items: stretch;
+        }
+        #${OVERLAY_ID} .panel {
+          width: 100%;
+          max-height: 100%;
+          border-radius: 20px;
+        }
+        #${OVERLAY_ID} .hero h2 {
+          font-size: 30px;
+        }
+        #${OVERLAY_ID} .footer {
+          padding: 14px 18px 18px;
+        }
       }
     `;
     document.head.appendChild(style);
@@ -358,10 +381,10 @@
               <span id="value-saved" class="value">-</span>
             </div>
           </div>
-          <div class="footer">
-            <span id="shopee-stats-meta" class="meta">Chỉ dùng dữ liệu của phiên đăng nhập hiện tại.</span>
-            <button id="shopee-stats-close" class="close">Đóng</button>
-          </div>
+        </div>
+        <div class="footer">
+          <span id="shopee-stats-meta" class="meta">Chỉ dùng dữ liệu của phiên đăng nhập hiện tại.</span>
+          <button id="shopee-stats-close" class="close">Đóng</button>
         </div>
       </div>
     `;
