@@ -226,10 +226,10 @@
     if (totalSpent <= 100000) {
       return {
         key: "khong-nghien",
-        title: "Level 1 - Lướt cho vui",
-        headline: "Ví vẫn khỏe, chưa cần truyền nước",
+        title: "Level 1 - Dạo cho biết mùi",
+        headline: "Ví vẫn tươi, chưa phải báo người nhà",
         detail:
-          "Bạn mới đi ngang Shopee chào hỏi xã giao. Ví tiền hiện vẫn còn nét mặt của một công dân lương thiện.",
+          "Bạn mới lướt Shopee kiểu xã giao cho có lệ. Số dư vẫn còn nguyên khí, ngân hàng chưa cần gọi điện hỏi thăm.",
         imageUrl: LEVEL_IMAGES[0],
         imageAlt: "Minh hoa vui nhon level 1 luot cho vui",
       };
@@ -238,10 +238,10 @@
     if (totalSpent <= 500000) {
       return {
         key: "mua-cho-vui",
-        title: "Level 2 - Chốt nhẹ đầu ngón tay",
-        headline: "Ngón tay đã biết tự tìm nút mua",
+        title: "Level 2 - Chốt đơn bằng phản xạ",
+        headline: "Ngón tay bắt đầu có chính kiến riêng",
         detail:
-          "Mới vài đơn xinh xinh thôi nhưng nguy hiểm ở chỗ bạn bắt đầu thấy câu 'mua thêm chút nữa cũng không sao' nghe rất hợp lý.",
+          "Mới vài món thôi nhưng đã bắt đầu hay nói câu rất nguy hiểm: 'mua chút xíu à, đáng bao nhiêu đâu'. Đây là câu mở đầu cho nhiều bi kịch.",
         imageUrl: LEVEL_IMAGES[1],
         imageAlt: "Minh hoa vui nhon level 2 chot nhe",
       };
@@ -250,10 +250,10 @@
     if (totalSpent <= 2000000) {
       return {
         key: "san-sale-nhap-mon",
-        title: "Level 3 - Săn sale có kỹ năng",
-        headline: "Voucher vừa ló là bạn đã khóa mục tiêu",
+        title: "Level 3 - Tân binh săn sale",
+        headline: "Voucher vừa thò mặt ra là bạn lao tới",
         detail:
-          'Bạn bắt đầu thuộc lòng giờ săn sale, mã freeship và câu thần chú "em không tiêu nhiều đâu, em đang tiết kiệm".',
+          'Bạn đã thuộc lòng giờ sale, mã freeship và thần chú "em không tiêu tiền, em đang tối ưu chi phí". Nghe rất tài chính nhưng cuối cùng vẫn là mua.',
         imageUrl: LEVEL_IMAGES[2],
         imageAlt: "Minh hoa vui nhon level 3 san sale",
       };
@@ -262,10 +262,10 @@
     if (totalSpent <= 5000000) {
       return {
         key: "tay-nhanh-hon-nao",
-        title: "Level 4 - Tay nhanh hơn não",
-        headline: "Não chưa load xong thì đơn đã xác nhận",
+        title: "Level 4 - Não chưa duyệt, tay đã duyệt",
+        headline: "Đơn xác nhận trước khi lý trí kịp online",
         detail:
-          "Mọi thứ diễn ra quá nhanh: thấy sale, bấm mua, thanh toán, rồi ngồi im một góc tự hỏi cuộc đời rẽ hướng từ khi nào.",
+          "Quy trình mua hàng của bạn rất gọn: thấy deal, chốt đơn, trả tiền, rồi ngồi đơ 7 giây để tự hỏi ai đã cầm điện thoại của mình nãy giờ.",
         imageUrl: LEVEL_IMAGES[3],
         imageAlt: "Minh hoa vui nhon level 4 tay nhanh",
       };
@@ -274,10 +274,10 @@
     if (totalSpent <= 10000000) {
       return {
         key: "thanh-vien-than-quen",
-        title: "Level 5 - Thành viên thân quen",
-        headline: "Shipper nhìn xa đã biết đơn nhà ai",
+        title: "Level 5 - Khách quen hệ kim cương",
+        headline: "Shipper nhìn địa chỉ là thở dài nhẹ",
         detail:
-          "Bạn nhớ mã giảm giá nhanh hơn lịch họp, còn app Shopee thì mở nhanh hơn cả app ngân hàng dù lý trí đã nhiều lần can ngăn.",
+          "Bạn nhớ mã giảm giá nhanh hơn lịch họp, mở Shopee nhanh hơn app ngân hàng, và shipper đã thuộc mặt bạn như người thân thất lạc lâu năm.",
         imageUrl: LEVEL_IMAGES[4],
         imageAlt: "Minh hoa vui nhon level 5 thanh vien than quen",
       };
@@ -286,10 +286,10 @@
     if (totalSpent <= 30000000) {
       return {
         key: "truong-phong-chot-don",
-        title: "Level 6 - Trưởng phòng chốt đơn",
-        headline: "Mỗi cú chốt đơn đều mang tầm chiến lược",
+        title: "Level 6 - Trưởng phòng tiêu dùng",
+        headline: "Mỗi cú chốt đơn đều có biên bản nội tâm",
         detail:
-          "Bạn không còn mua hàng nữa, bạn đang điều hành một phòng ban chuyên trách tối ưu voucher, so giá và tiêu tiền cực kỳ có quy trình.",
+          "Bạn không còn mua đồ nữa, bạn đang điều hành cả một quy trình gồm: khảo giá, so voucher, canh giờ, rồi tự duyệt ngân sách bằng cảm xúc.",
         imageUrl: LEVEL_IMAGES[5],
         imageAlt: "Minh hoa vui nhon level 6 truong phong chot don",
       };
@@ -298,10 +298,10 @@
     if (totalSpent <= 70000000) {
       return {
         key: "dai-su-nganh-hang",
-        title: "Level 7 - Đại sứ ngành hàng",
-        headline: "Ngành hàng nào cũng gọi bạn là khách quý",
+        title: "Level 7 - Đại sứ chốt đơn đa ngành",
+        headline: "Shopee nhìn bạn như khách VIP toàn sàn",
         detail:
-          "Từ gia dụng, mỹ phẩm đến mấy món không biết mua để làm gì, bạn đều có thể tự thuyết phục rằng thiếu nó cuộc sống sẽ không trọn vẹn.",
+          "Từ gia dụng, mỹ phẩm đến mấy món mua xong chưa biết để làm gì, bạn vẫn có thể thuyết trình 15 phút để chứng minh đó là nhu cầu cấp thiết.",
         imageUrl: LEVEL_IMAGES[6],
         imageAlt: "Minh hoa vui nhon level 7 dai su nganh hang",
       };
@@ -311,9 +311,9 @@
       return {
         key: "he-tam-linh-vi-dien-tu",
         title: "Level 8 - Hệ tâm linh ví điện tử",
-        headline: "Ví điện tử cứ nghe sale là tự động rén",
+        headline: "Ví vừa ting một cái là linh hồn rời cơ thể",
         detail:
-          "Mỗi mùa sale đi qua là tim bạn nở hoa còn số dư tài khoản thì lặng lẽ học cách buông bỏ. Đây là mối quan hệ vừa toxic vừa khó dứt.",
+          "Mỗi mùa sale đi qua là trái tim bạn nở hoa, còn số dư tài khoản thì âm thầm đi học khóa 'chấp nhận sự thật'. Mối quan hệ này rất độc hại nhưng bạn vẫn đắm say.",
         imageUrl: LEVEL_IMAGES[7],
         imageAlt: "Minh hoa vui nhon level 8 vi dien tu",
       };
@@ -322,10 +322,10 @@
     if (totalSpent <= 200000000) {
       return {
         key: "trum-cuoi-flash-sale",
-        title: "Level 9 - Trùm cuối flash sale",
-        headline: "Lịch sử mua hàng dài như biên niên sử",
+        title: "Level 9 - Trùm cuối của mọi đợt sale",
+        headline: "Lịch sử mua hàng dài hơn chuyện tình cũ",
         detail:
-          "Bạn canh sale bằng bản năng, phát hiện voucher bằng giác quan thứ sáu, và chốt đơn với sự dứt khoát khiến người ngoài tưởng bạn đang giải cứu nền kinh tế.",
+          "Bạn phát hiện voucher bằng giác quan thứ sáu, canh sale bằng bản năng sinh tồn, và chốt đơn quyết liệt tới mức người ngoài tưởng bạn đang gánh KPI cho cả sàn.",
         imageUrl: LEVEL_IMAGES[8],
         imageAlt: "Minh hoa vui nhon level 9 trum cuoi flash sale",
       };
@@ -333,10 +333,10 @@
 
     return {
       key: "huyen-thoai-tieu-dung",
-      title: "Level 10 - Huyền thoại tiêu dùng",
-      headline: "Ngân hàng thấy tên bạn là tự mở biên bản",
+      title: "Level 10 - Tượng đài tiêu dùng bất diệt",
+      headline: "Ngân hàng thấy tên bạn là tự bật báo động nội bộ",
       detail:
-        "Bạn không còn mua sắm nữa, bạn đang sống một thiên anh hùng ca của giỏ hàng. Bảng sao kê nhìn vào cũng phải hít sâu rồi xin phép ngồi xuống.",
+        "Bạn không còn mua sắm nữa, bạn đang viết sử thi cho giỏ hàng bằng chính hạn mức thanh toán của mình. Bảng sao kê nhìn xong cũng phải ngồi xuống uống nước cho đỡ sốc.",
       imageUrl: LEVEL_IMAGES[9],
       imageAlt: "Minh hoa vui nhon level 10 huyen thoai tieu dung",
     };
@@ -351,7 +351,7 @@
           <span class="hero-label">Chẩn đoán hôm nay</span>
           <h2 id="shopee-stats-title">Đang quét mức độ nghiện...</h2>
           <p id="shopee-stats-detail">Đang xin Shopee kê khai lịch sử mua sắm...</p>
-          <span id="shopee-stats-level" class="hero-level">Level: Đang phân tích</span>
+          <span id="shopee-stats-level" class="hero-level">Đang phân tích level...</span>
           <div class="hero-media">
             <img
               id="shopee-stats-image"
@@ -491,7 +491,7 @@
     }
 
     hero.className = `hero level-${summary.key}`;
-    setText(root, "#shopee-stats-level", `Level: ${summary.title}`);
+    setText(root, "#shopee-stats-level", summary.title);
     const imageNode = root.querySelector("#shopee-stats-image");
     if (imageNode) {
       imageNode.src = summary.imageUrl;
@@ -538,7 +538,7 @@
         "#shopee-stats-detail",
         "Hãy kiểm tra xem bạn đã mở Shopee và đăng nhập tài khoản chưa.",
       );
-      setText(overlay, "#shopee-stats-level", "Level: Chưa đủ dữ liệu");
+      setText(overlay, "#shopee-stats-level", "Chưa đủ dữ liệu để chẩn đoán");
       setText(
         overlay,
         "#shopee-stats-status",
